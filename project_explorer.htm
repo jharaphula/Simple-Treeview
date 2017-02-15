@@ -1,0 +1,34 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN"
+"http://www.w3.org/TR/html4/loose.dtd">
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1">
+<title>Project Explorer</title>
+<link rel="stylesheet" href="./tree.css">
+<script language="javascript" src="scripts/tree_view.js"></script>
+<script language="JavaScript" type="text/JavaScript">
+function CreateProjectExplorer()
+{
+	Initialise();
+	
+	// Build a test project.
+	d = CreateTreeItem( rootCell, "img/project.gif", "img/project.gif", "Point of Sale terminal", null, null );
+	d2 = CreateTreeItem( d, "img/folder_closed.gif", "img/folder_open.gif", "Actors", null, null );
+	CreateTreeItem( d2, "img/Actor.gif", "img/Actor.gif", "Customer", null, null );
+	d6 = CreateTreeItem( d2, "img/Actor.gif", "img/Actor.gif", "Sales Clerk", true, null, null );
+	CreateTreeItem( d6, "img/CommAB.gif", "img/CommAB.gif", "Transact Sale", "./Transact Sale.htm", "content" );
+	d3 = CreateTreeItem( d, "img/folder_closed.gif", "img/folder_open.gif", "Use Cases", null, null );
+	d4 = CreateTreeItem( d3, "img/UseCase.gif", "img/UseCase.gif", "Transact Sale", "./Transact Sale.htm", "content" );
+	CreateTreeItem( d4, "img/CommBA.gif", "img/CommBA.gif", "Sales Clerk", null, null );
+	CreateTreeItem( d4, "img/includeAB.gif", "img/includeAB.gif", "Cash Out", "http://cashout.com", "content" );
+	CreateTreeItem( d3, "img/UseCase.gif", "img/UseCase.gif", "Register Terminal", "http://www.rewrittensoftware.com", "content" );
+	d5 = CreateTreeItem( d3, "img/folder_closed.gif", "img/folder_open.gif", "Use Cases", null, null );
+	CreateTreeItem( d5, "img/UseCase.gif", "img/UseCase.gif", "Another use case", null, null );
+	CreateTreeItem( rootCell, "img/text.gif", "img/text.gif", "Rewritten Software.com", "http://www.rewrittensoftware.com", "content" );
+}
+</script>
+</head>
+
+<body onLoad="CreateProjectExplorer()">
+</body>
+</html>

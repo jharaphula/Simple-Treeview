@@ -1,0 +1,84 @@
+.term {
+	color: #5f9ea0;
+	font-size: small;
+}
+.extensionPoint {
+	color: #008000;
+	font-size: small;
+}
+.actor {
+	color: #CD5C5C;
+	font-size: small;
+}
+.condition {
+	color: #0000FF;
+	font-size: small;
+}
+.flowControl {
+	color: #FF0000;
+	font-size: small;
+}
+.section {
+	font-family: Arial, Helvetica, sans-serif;
+	font-size: x-large;
+}
+.heading {
+	font-family: Arial, Helvetica, sans-serif;
+	font-size: large;
+}
+.structure {
+	color: #660033;
+	font-size: small;
+}
+.header {
+	font-family: Arial, Helvetica, sans-serif;
+	font-size: xx-small;
+	text-align: right;
+}
+.footer {
+	font-family: Arial, Helvetica, sans-serif;
+	font-size: xx-small;
+	text-align: center;
+}
+.step {
+	font-family: Arial, Helvetica, sans-serif;
+	font-size: small;
+	margin-bottom: 0;
+	margin-top: 0;
+}
+blockquote {
+	margin-bottom: 0;
+	margin-top: 0;
+}
+.indent {
+	text-indent: 2cm;
+}
+tr {
+	left: 100px;
+}
+
+div.nicetitle {
+	position: absolute;
+	padding: 4px;
+	top: 0px;
+	left: 0px;
+	font-size: 10px;
+	font-family: Verdana, Helvetica, Arial, sans-serif;
+	width: 25em;
+	font-weight: normal;
+    
+    /* Mozilla proprietary */
+    -moz-border-radius: 12px;
+	background-color: #FFFF99;
+	color: #000000;
+}
+
+div.nicetitle p {
+    margin: 0; padding: 0 3px;
+}
+
+div.nicetitle p.destination {
+    font-size: 9px;
+    text-align: left;
+    padding-top: 3px;
+}

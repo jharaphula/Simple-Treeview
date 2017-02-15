@@ -1,0 +1,171 @@
+<style type="text/css">
+<!--
+-->
+</style>
+<link href="Use%20Case%20Studio.css" rel="stylesheet" type="text/css">
+<script language="JavaScript" type="text/JavaScript">
+
+</script>
+<title>Test Use Case</title><table width="100%" border="0">
+  <tr>
+    <td class="header">Published: 30th Jan 2005 </td>
+  </tr>
+  <tr>
+    <td class="step"><span class="section">Use Case Name </span>
+      <p> Transact Sale</p>
+      <span class="section">Brief Description</span>
+      <p class="step"> This use case describes how a <span class="actor">Sales Clerk</span> uses the Point of Sale terminal to process electronic-funds-transfer sales. </p>
+      <p class="section">Pre-conditions</p>
+      <p><span class="heading">Terminal is re</span><span class="heading">gistered</span> </p>
+      <p class="step"><strong>A Style example for indentation</strong></p>
+      <p class="step"><span class="indent">The system is currently registered with the <span class="actor">Bank Host</span>. (See Register Terminal use case.) </span></p>
+      <p><span class="section">Basic Flow</span></p>
+      <blockquote>
+        <p class="step"> <span class="step">This use case begins when the </span><span class="actor" title="Sales Clerk">Sales Clerk</span><span class="step"> wishes to process a new sale.</span></p>
+        <p class="step"> The system prompts the <span class="actor" title="Sales Clerk">Sales Clerk</span> to enter the <span class="term" title="sale details">sale details</span>. </p>
+        <p class="step"> The <span class="actor">Sales Clerk</span> enters the <span class="term" title="sale details">sale details</span>. <br>
+          <span class="extensionPoint"><u>{Cash-Out Requested}</u></span></p>
+        <p class="step"><span class="structure">include use case</span> Point Of Sale Terminal.Use Cases.Identify Customer</p>
+        <p class="step">The system prompts the Sales Clerk to swipe the <span class="term"  title="transaction card">transaction card</span>.</p>
+        <p class="step">The <span class="actor">Sales Clerk</span> swipes the <span class="term">transaction card</span>.</p>
+        <p class="step"> The system prompts the <span class="actor" title="Customer">Customer</span> to select their account type and enter their <span class="term">PIN</span>.</p>
+        <p class="step"><span class="extensionPoint">{Mistake made during PIN entry}</span> </p>
+        <p class="step"> The <span class="actor" >Customer</span> selects their account type and enters their <span class="term">PIN</span>.</p>
+        <p class="step">        <span class="extensionPoint">{Reprocess transaction}</span></p>
+      </blockquote>      
+      <p class="step"><strong>A &lt;blockquote&gt; Example </strong></p>
+      <blockquote>
+        <p class="step">
+          The following steps are performed concurrently. When all steps are complete the use case resumes.</p>
+        <blockquote>
+          <p class="step">The system sends the transaction request to the <span class="actor">Bank Host</span> The system sends the transaction request to the <span class="actor">Bank Host</span> <span class="step">The system sends the transaction request to the <span class="actor">Bank Host</span> </span> <span class="step">The system sends the transaction request to the <span class="actor">Bank Host</span> <a name="aaa"></a></span>
+          </p>
+          <blockquote>
+            <p class="step"> The system prints the transaction receipt. The system prints the transaction receipt. The system prints the transaction receipt. The system prints the transaction receipt. </p>
+          </blockquote>
+        </blockquote>
+      </blockquote>      
+      <p class="step"><strong>A style=&quot;padding-left&quot; example</strong></p>
+      <p class="step" style="padding-left:1cm">The following steps are performed concurrently. When all steps are complete the use case resumes.</p>
+      <p class="step" style="padding-left:2cm">The system sends the transaction request to the <span class="actor">Bank Host</span> The system sends the transaction request to the <span class="actor">Bank Host</span> The system sends the transaction request to the <span class="actor">Bank Host</span> The system sends the transaction request to the <span class="actor">Bank Host</span> </p>
+      <p class="step"  style="padding-left:3cm"> The system prints the transaction receipt. The system prints the transaction receipt. The system prints the transaction receipt. The system prints the transaction receipt. </p>      <p class="step">&nbsp;</p>
+      <p class="step">&nbsp; </p>
+      <p class="step"><strong>A Nested Table Example: </strong></p>      
+      <table width="100%"  border="1">
+        <tr>
+          <td width="100">&nbsp; </td>
+          <td width="95%" class="step">The following steps are performed concurrently. When all steps are complete the use case resumes.</td>
+        </tr>
+        <tr>
+          <td width="100">&nbsp; </td>
+          <td><table width="100%"  border="1">
+            <tr>
+              <td width="50">&nbsp; </td>
+              <td width="759" class="step"><p class="step">The system sends the transaction request to the <span class="actor">Bank Host</span> The system sends the transaction request to the <span class="actor">Bank Host</span> The system sends the transaction request to the <span class="actor">Bank Host</span> The system sends the transaction request to the <span class="actor">Bank Host</span> </p>
+                <p style="padding-left:50px " class="step">LLine 2 Line 2 Line 2
+Line 2 
+                Line 2 
+                Line 2 
+                Line 2 
+                Line 2 
+                Line 2 
+                Line 2 
+                Line 2 
+                Line 2 
+                Line 2 
+                Line 2 
+                Line 2 
+                Line 2 
+                Line 2 
+                Line 2</p>
+                <p class="step">Line 3</p>
+                <p class="step">Line 4   </p></td>
+            </tr>
+            <tr>
+              <td>&nbsp; </td>
+              <td class="step"><table width="100%"  border="1">
+                <tr>
+                  <td width="50">&nbsp; </td>
+                  <td class="step"><p class="step">The system prints the <span class="term">transaction receipt</span>. The system prints the transaction receipt. The system prints the transaction receipt. The system prints the transaction receipt. </p>
+                    <p class="step">Line 2</p>
+                    <p class="step">Line 3</p>
+                    <p class="step">Line 4   </p></td>
+                </tr>
+                <tr>
+                  <td>&nbsp; </td>
+                  <td align="char" charoff="20%" class="step"><p class="step">Charoff example</p>
+                    <p class="step">The system prints the transaction receipt. The system prints the transaction receipt. The system prints the transaction receipt. The system prints the transaction receipt. </p>
+                    <p class="step">Line 2</p>
+                    <p class="step">Line 3</p>
+                    <p class="step">Line 4 </p></td>
+                </tr>
+              </table></td>
+            </tr>
+          </table></td>
+        </tr>
+      </table>      
+      <blockquote>
+        <p class="step">        <span class="extensionPoint">{Transaction denied}
+          </span></p>
+        <p class="step">        The <span class="actor">Bank Host</span> responds with a transaction approval number. </p>
+        <p class="step"> The system prints the transaction approval number on the receipt</p>
+        <p class="step">        <span class="flowControl">The use case ends</span>.</p>
+      </blockquote>      <p class="section">Post-conditions</p>      <p class="section">Alternative Flows</p>
+      <p class="heading">Invalid PIN</p>
+      <p class="step"><span class="condition">if at</span> <span class="extensionPoint">{Transaction denied} <protect>(in Basic Flow)</protect></span><protect></protect><span class="step"><protect> </protect></span> the <span class="actor">Bank Host</span> responds that the <span class="term">PIN</span> is invalid</p>
+      <p class="step"> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;The system prints "transaction denied" on the customer's receipt.</p>
+      <p class="step"> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;The system informs the <span class="actor">Sales Clerk</span> and the <span class="actor">Customer</span> that the <span class="term">PIN</span> was invalid. The system informs the <span class="actor">Sales Clerk</span> and the <span class="actor">Customer</span> that the <span class="term">PIN</span> was invalid. The system informs the <span class="actor">Sales Clerk</span> and the <span class="actor">Customer</span> that the <span class="term">PIN</span> was invalid.
+      </p>
+       <p class="step"> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;The system prompts the <span class="actor">Customer</span> to reenter their <span class="term">PIN</span>.</p>
+      <p class="step"> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;The <span class="actor">Customer</span> reenters their <span class="term">PIN</span>.</p>
+      <p class="step"> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span class="flowControl">The use case resumes at</span> <span class="extensionPoint">{Reprocess transaction} <protect>(in Basic Flow)</protect></span><protect></protect><span class="step"><protect> </protect></span><protect></protect></p>
+      <p><span class="heading">Insufficient Funds</span></p>
+      <p class="step"><span class="step">if at <font color=Green>{Transaction denied} </font></span><span class="step"><font color=Green><protect> (in Basic Flow) </protect></font> the <font color=IndianRed>Bank Host</font> responds that there are insufficient funds in the <font color=IndianRed>customer</font>'s account &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;The system prints "transaction denied" on the receipt.</span></p>
+      <p class="step"><span class="step"> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;The system informs the <font color=IndianRed>Sales Clerk</font> and the <font color=IndianRed>Customer</font> that there are insufficient funds in the account.</span></p>
+      <p class="step"><span class="step"> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span><span class="flowControl">The use case ends</span><span class="step">.</span></p>
+      <p class="step">&nbsp;</p>
+      <p class="step"><span class="heading">Daily Transaction Limit Exceeded</span>
+      </p>
+      <p> &nbsp;&nbsp;&nbsp;&nbsp;If at <font color=Green>{Transaction denied}<protect> (in Basic Flow) </protect></font> the <font color=IndianRed>Bank Host</font> responds that the <font color=IndianRed>customer</font> has exceeded their daily withdrawal limit on the nominated account
+      <p> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;The system prints "transaction denied" on the receipt.
+      <p> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;The system informs the <font color=IndianRed>Sales Clerk</font> and the <font color=IndianRed>Customer</font> that the daily limit has been exceeded.
+      <p> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;The use case ends.</p>
+      <span class="heading">Fraud Alert On Transaction Card</span>
+      <p> &nbsp;&nbsp;&nbsp;&nbsp;If at <font color=Green>{Transaction denied}<protect> (in Basic Flow) </protect></font> the <font color=IndianRed>Bank Host</font> responds that there is a fraud alert on the <font color=CadetBlue>transaction card</font>.
+      <p> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;The system prints "transaction denied" on the receipt.
+      <p> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;The system instructs the <font color=IndianRed>Sales Clerk</font> to hold the <font color=CadetBlue>transaction card</font> and contact the bank immediately.
+      <p> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;The system informs the <font color=IndianRed>Customer</font> that the transaction has been denied.
+      <p> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;The use case ends.
+      <p> from Point Of Sale Terminal.Use Cases.Identify Customer</p>
+      <span class="heading">Reenter PIN</span>
+      <p> &nbsp;&nbsp;&nbsp;&nbsp;if at <font color=Green>{Mistake made during PIN entry}<protect> (in Basic Flow) </protect></font> the customer chooses to clear the PIN they entered before the PIN was submitted
+      <p> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;The system clears the PIN entry and prompts the customer to enter their PIN
+      <p> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;The use case resumes at <font color=Green>{Mistake made during PIN entry}<protect> (in Basic Flow) </protect></font></p>
+      <span class="section">Named Subflows</span>
+      <p> from Point Of Sale Terminal.Use Cases.Identify Customer</p>
+      <p class="section">Special Requirements</p>
+      <p><span class="heading">Transaction Encryption</span> </p>
+      <p> &nbsp;&nbsp;&nbsp;&nbsp;All communication between the system, the <font color=CadetBlue>PIN pad</font> and the <font color=IndianRed>Bank Host</font> shall be encrypted using 3DES
+      <p> </p>
+      <p class="section">Scenarios</p>
+      <p class="heading">Purchase Items</p>
+      <p> &nbsp;&nbsp;&nbsp;&nbsp; Basic Flow
+      <p> </p>
+      <span class="heading">Customer has insufficient funds in their account</span>
+      <p> &nbsp;&nbsp;&nbsp;&nbsp; Basic Flow, Insufficient Funds</p>
+      <span class="heading">Customer exceeds their daily transaction limit</span>
+      <p> &nbsp;&nbsp;&nbsp;&nbsp; Basic Flow, Daily Transaction Limit Exceeded</p>
+      <span class="heading">Bank host responds that there is a fraud alert on the transaction card</span>
+      <p> &nbsp;&nbsp;&nbsp;&nbsp; Basic Flow, Fraud Alert On Transaction Card</p>
+      <span class="heading">Customer enters an invalid PIN</span>
+      <p> &nbsp;&nbsp;&nbsp;&nbsp;Basic Flow, Invalid PIN, Insufficient Funds</p>
+      <span class="heading">Customer corrects a mistake entering their PIN</span>
+      <p> &nbsp;&nbsp;&nbsp;&nbsp;Basic Flow, Point Of Sale Terminal.Use Cases.Identify Customer.Reenter PIN
+    <p></td>
+  </tr>
+  <tr>
+    <td class="footer">Copyright notice goes here. </td>
+  </tr>
+</table>
+<p class="section">&nbsp;
+</p>
